@@ -1,0 +1,4 @@
+name = "GraphAlgorithm"
+uuid = "f5cae233-a69f-4fd4-b097-d872a5811a1b"
+authors = ["steiner <steiner3044@163.com>"]
+version = "0.1.0"
