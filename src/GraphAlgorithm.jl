@@ -1,5 +1,6 @@
 module GraphAlgorithm
-
-greet() = print("Hello World!")
+using Graph
+include("mst.jl")
+export kruskalmst
 
 end # module
