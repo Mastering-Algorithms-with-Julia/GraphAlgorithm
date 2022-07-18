@@ -1,0 +1,32 @@
+* 图算法
+** 最小生成树
+*** kruskal
+#+begin_src julia
+  graph = UnDirectedGraph(Char)
+  for ch in 'A':'F'
+    insertVertex!(graph, ch)
+  end
+
+  insertEdge!(graph, 'A', 'B', 6)
+  insertEdge!(graph, 'A', 'D', 5)
+  insertEdge!(graph, 'A', 'C', 1)
+  insertEdge!(graph, 'B', 'C', 5)
+  insertEdge!(graph, 'D', 'C', 5)
+  insertEdge!(graph, 'B', 'E', 3)
+  insertEdge!(graph, 'C', 'E', 6)
+  insertEdge!(graph, 'C', 'F', 4)
+  insertEdge!(graph, 'D', 'F', 2)
+  insertEdge!(graph, 'E', 'F', 6)
+
+  mst = kruskalmst(graph)
+  println(mst)
+#+end_src
+
+#+begin_src julia
+A----|C 1 |  
+B----|E 3 | C 5 |  
+C----|A 1 | F 4 | B 5 |  
+D----|F 2 |  
+E----|B 3 |  
+F----|D 2 | C 4 |
+#+end_src
