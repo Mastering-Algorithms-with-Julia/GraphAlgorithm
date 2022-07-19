@@ -1,6 +1,6 @@
 * 图算法
-** 最小生成树
-*** kruskal
+** 最小生成树 using kruskal
+我只用 kruskal 实现，因为 prim 我懒得写，应该没人拿我怎么样吧
 #+begin_src julia
   graph = UnDirectedGraph(Char)
   for ch in 'A':'F'

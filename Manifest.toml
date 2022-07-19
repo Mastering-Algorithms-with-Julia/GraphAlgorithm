@@ -14,13 +14,21 @@ repo-url = "https://github.com/nesteiner/Graph.jl"
 uuid = "02309348-74b9-4183-9256-84e19e720cf7"
 version = "0.1.0"
 
+[[deps.Heap]]
+deps = ["Test"]
+git-tree-sha1 = "016d89115965d3a492653f78a2a66abb1370af3b"
+repo-rev = "master"
+repo-url = "https://github.com/nesteiner/Heap.jl.git"
+uuid = "98d27c62-3826-4236-8e4a-9c35fe941180"
+version = "0.1.0"
+
 [[deps.InteractiveUtils]]
 deps = ["Markdown"]
 uuid = "b77e0a4c-d291-57a0-90e8-8db25a27a240"
 
 [[deps.LinkedList]]
 deps = ["Test"]
-git-tree-sha1 = "27622965ef38bb5c1f291d1c7db843987634194c"
+git-tree-sha1 = "9331f206f3561e9afe370d17e2a1c66a75d5549c"
 repo-rev = "master"
 repo-url = "https://github.com/nesteiner/LinkedList.jl.git"
 uuid = "8bb5f1f9-8766-4891-94ae-ce2d9eef0394"

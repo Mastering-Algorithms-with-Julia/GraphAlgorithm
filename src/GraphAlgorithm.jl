@@ -1,6 +1,7 @@
 module GraphAlgorithm
-using Graph
+using Graph, Heap
 include("mst.jl")
-export kruskalmst
+include("dijkstra.jl")
+export kruskalmst, dijkstra
 
 end # module
