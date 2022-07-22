@@ -1,4 +1,4 @@
-using Graph, GraphAlgorithm, Test
+using Graph, GraphAlgorithm, Test, LinkedList
 
 @testset "generate mst" begin
   graph = UnDirectedGraph(Char)
@@ -62,4 +62,26 @@ insertEdge!(graph, 'A', 'B', 5)
   
 
   @show dijkstra(graph, 'A', 'G')
+end
+
+@testset "test tsp" begin
+  vertices = [
+    TSPVertex(0, 2, 1),
+    TSPVertex(0, 5, 2),
+    TSPVertex(0, 1, 3),
+    TSPVertex(0, 4, 3),
+    TSPVertex(0, 6, 3),
+    TSPVertex(0, 2, 4),
+    TSPVertex(0, 5, 5),
+  ]
+
+  list = List(TSPVertex{Int})
+  for vertex in vertices
+    push!(list, vertex)
+  end
+
+  tour = tsp(list, vertices[1])
+  for vertex in tour
+    println(vertex.x, "\t", vertex.y)
+  end
 end
